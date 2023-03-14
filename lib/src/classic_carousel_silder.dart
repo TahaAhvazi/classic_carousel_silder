@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class HomePage extends StatefulWidget {
+class ClassicCarouselSlider extends StatefulWidget {
   int currentPage;
   List<String> images;
-  double width, height;
+  double width, hight;
   Color unselectedColor, selectedColor;
 
-  HomePage({
+  ClassicCarouselSlider({
     super.key,
     required this.currentPage,
     required this.images,
-    required this.height,
+    required this.hight,
     required this.width,
     this.selectedColor = Colors.black,
     this.unselectedColor = Colors.grey,
   });
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<ClassicCarouselSlider> createState() => _ClassicCarouselSliderState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _ClassicCarouselSliderState extends State<ClassicCarouselSlider> {
   late PageController _pageController;
   @override
   void initState() {
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(18.0),
             child: SizedBox(
-              height: widget.height,
+              height: widget.hight,
               width: widget.width,
               child: PageView.builder(
                 controller: _pageController,

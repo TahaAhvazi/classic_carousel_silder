@@ -1,39 +1,115 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# CLASSIC CAROUSEL SLIDER 💫
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+By using this package, you will be able to easily create a beautiful Carousel slider in flutter and use it on diffrent Os, here is the documantation about how to use it💡
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+🟢داکیومنت فارسی در مورد نحوه استفاده از این پکیج در ادامه آمده است🟢
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
-## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+## How to use⁉️
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+#### set a classic Carousel slider: ✅
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```
+ClassicCarouselSlider(
+      currentPage: 0,
+      images: myImages,
+      height: 100,
+      width: 200,
+    );
+  }
+}
 ```
 
-## Additional information
+The arguments needed for (ClassicCarouselSlider) 🟢
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `currentPage` | `int` | **required**. shows the first image |
+
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `images`      | `List<String>` | **required**. addres of images in String|
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `hight`      | `double` | **required**. hight of the classic Carousel slider widget|
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `width`      | `double` | **required**. width of the classic Carousel slider widget|
+
+
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `selectedColor`      | `Color` | **Optional**. the color of selected state of indicators|
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `unSelectedColor`      | `Color` | **Optional**. the color of unSelected state of indicators|
+
+
+## ⁉️نحوه استفاده 
+
+#### ابتدا ویجت منو مورد نظر را تعریف کنید: ✅
+
+```
+ClassicCarouselSlider(
+      currentPage: 0,
+      images: myImages,
+      height: 100,
+      width: 200,
+    );
+  }
+}
+```
+
+(ClassicCarouselSlider) پارامتر های اجباری و اختیاری موجود برای استفاده در کلاس  🟢
+
+| پارامتر | نوع     | توضیحات                |
+| :-------- | :------- | :------------------------- |
+| `currentPage` | `int` | **اجباری**. عدد تعیین کننده اولین تصویر |
+
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `images`      | `List<Strings>` | **اجباری**. لیست تصاویر مد نظر به صورت رشته متنی |
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `hight`      | `double` | **اجباری**. ارتفاع ویجت مورد نظر |
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `width`      | `double` | **اجباری**.  عرض ویجت مورد نظر|
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `width`      | `double` | **اختیاری**. تنظیم عرض منو  : |
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `selectedColor`      | `color` | **اختیاری**. رنگ شمارنده های انتخاب شده در ویجت|
+
+| پارامتر | نوع     | توضیحات                       |
+| :-------- | :------- | :-------------------------------- |
+| `unSelectedColor`      | `color` | **اختیاری**. رنگ شمارنده های انتخاب نشده در ویجت  |
+
+
+
+
+
+
+
+
+## Author👦
+
+- [@Taha ahvazi ](https://github.com/TahaAhvazi)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
